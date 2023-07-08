@@ -4,130 +4,181 @@
     <meta charset="UTF-8" />
     <title>SmartLook Information System</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      window.smartlook ||
+        (function (d) {
+          var o = (smartlook = function () {
+              o.api.push(arguments);
+            }),
+            h = d.getElementsByTagName("head")[0];
+          var c = d.createElement("script");
+          o.api = new Array();
+          c.async = true;
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.src = "https://web-sdk.smartlook.com/recorder.js";
+          h.appendChild(c);
+        })(document);
+      smartlook("init", "39042d0352ee6dfa96c936c73c7986be203c5179", {
+        region: "eu",
+      });
+    </script>
   </head>
   <body>
     <div class="header">
       <h1>SmartLook Information System</h1>
+      <img src="imgs/logo.png" alt="logo" id="logo" />
     </div>
 
     <div class="container">
       <div class="main-content">
-        <h2>Introduction</h2>
-        <p>
-          The SmartLook Information System is a powerful tool designed to
-          analyze user behavior on websites and mobile applications. It provides
-          detailed insights and analytics to help businesses understand their
-          customers better, optimize their websites, and improve user
-          experience.
-        </p>
+        <h2>What is Smartlook?</h2>
 
-        <h2>Functionalities and Features</h2>
-        <ul>
-          <li>
-            User Behavior Tracking: Captures and records user interactions,
-            providing session replays.
-          </li>
-          <li>
-            Heatmaps: Generates visualizations of user activity, highlighting
-            engagement areas.
-          </li>
-          <li>
-            Conversion Funnels: Tracks user behavior throughout the conversion
-            process, identifying drop-off points.
-          </li>
-          <li>
-            Event Tracking: Monitors custom events and actions performed by
-            users.
-          </li>
-          <li>
-            Filtering and Segmentation: Allows data analysis based on various
-            parameters.
-          </li>
-          <li>
-            Integration with Other Tools: Integrates with popular analytics and
-            marketing tools.
-          </li>
-        </ul>
+        <div id="content1" class="hidden">
+          <p>
+            The SmartLook Information System is a powerful tool designed to
+            analyze user behavior on websites and mobile applications. It
+            provides detailed insights and analytics to help businesses
+            understand their customers better, optimize their websites, and
+            improve user experience.
+          </p>
+        </div>
+        <button onclick="toggleContent('content1')">Show/Hide</button>
 
-        <h2>Applications</h2>
-        <ul>
-          <li>
-            User Experience Optimization: Understands user interactions to
-            enhance overall experience.
-          </li>
-          <li>
-            Conversion Rate Optimization: Analyzes user behavior to optimize
-            conversion processes.
-          </li>
-          <li>
-            Bug and Error Tracking: Identifies and resolves technical issues
-            through user session analysis.
-          </li>
-          <li>
-            A/B Testing: Provides insights for design and content changes.
-          </li>
-        </ul>
+        <h2>Functionalities and Features:</h2>
 
-        <h2>Feature Enhancement Proposal</h2>
-        <ul>
-          <li>
-            Real-time Analytics: Introduce up-to-the-minute insights into user
-            behavior and website performance.
-          </li>
-          <li>
-            Funnel Visualization: Enhance conversion funnels with visual
-            representations.
-          </li>
-          <li>
-            Machine Learning Insights: Incorporate machine learning algorithms
-            for automated insights.
-          </li>
-          <li>
-            User Feedback Integration: Integrate user feedback mechanism for
-            qualitative data.
-          </li>
-        </ul>
+        <div id="content2" class="hidden">
+          <ul>
+            <li>
+              User Behavior Tracking: Captures and records user interactions,
+              providing session replays.
+            </li>
+            <li>
+              Heatmaps: Generates visualizations of user activity, highlighting
+              engagement areas.
+            </li>
+            <li>
+              Conversion Funnels: Tracks user behavior throughout the conversion
+              process, identifying drop-off points.
+            </li>
+            <li>
+              Event Tracking: Monitors custom events and actions performed by
+              users.
+            </li>
+            <li>
+              Filtering and Segmentation: Allows data analysis based on various
+              parameters.
+            </li>
+            <li>
+              Integration with Other Tools: Integrates with popular analytics
+              and marketing tools.
+            </li>
+          </ul>
+        </div>
+        <button onclick="toggleContent('content2')">Show / Hide</button>
+        <img src="imgs/pplworking.jpg" alt="PeopleWorking" class="imgcl" />
+        <h2>Applications:</h2>
 
-        <h2>Comparative Analysis</h2>
-        <p>
-          Key factors considered in evaluating the Smartlook Information System:
-        </p>
-        <ul>
-          <li>
-            Functionality: Offers a comprehensive set of features for user
-            behavior analysis.
-          </li>
-          <li>
-            User Interface: Boasts an intuitive and user-friendly interface.
-          </li>
-          <li>
-            Cost: Competitive pricing with various plans for different business
-            needs.
-          </li>
-          <li>
-            Scalability: Designed to handle large volumes of data and scale
-            accordingly.
-          </li>
-          <li>
-            Customer Support: Responsive support through multiple channels.
-          </li>
-        </ul>
+        <div id="content3" class="hidden">
+          <ul>
+            <li>
+              User Experience Optimization: Understands user interactions to
+              enhance overall experience.
+            </li>
+            <li>
+              Conversion Rate Optimization: Analyzes user behavior to optimize
+              conversion processes.
+            </li>
+            <li>
+              Bug and Error Tracking: Identifies and resolves technical issues
+              through user session analysis.
+            </li>
+            <li>
+              A/B Testing: Provides insights for design and content changes.
+            </li>
+          </ul>
+        </div>
+        <button onclick="toggleContent('content3')">Show / Hide</button>
+        <h2>Feature Enhancement Proposal:</h2>
 
-        <h2>Conclusion</h2>
-        <p>
-          The Smartlook Information System provides powerful functionalities for
-          user behavior analysis, optimization, and bug tracking. It offers
-          valuable insights to businesses, helping them make data-driven
-          decisions for improved user experience. With its strong functionality,
-          user-friendly interface, competitive pricing, scalability, and
-          reliable customer support, Smartlook positions itself as a leading
-          solution in the market for user behavior analytics.
-        </p>
+        <div id="content4" class="hidden">
+          <ul>
+            <li>
+              Real-time Analytics: Introduce up-to-the-minute insights into user
+              behavior and website performance.
+            </li>
+            <li>
+              Funnel Visualization: Enhance conversion funnels with visual
+              representations.
+            </li>
+            <li>
+              Machine Learning Insights: Incorporate machine learning algorithms
+              for automated insights.
+            </li>
+            <li>
+              User Feedback Integration: Integrate user feedback mechanism for
+              qualitative data.
+            </li>
+          </ul>
+        </div>
+        <button onclick="toggleContent('content4')">Show / Hide</button>
+        <img src="imgs/map.png" alt="smartlookmain" class="imgcl" />
+        <h2>Comparative Analysis:</h2>
+
+        <div id="content5" class="hidden">
+          <p>
+            Key factors considered in evaluating the Smartlook Information
+            System:
+          </p>
+          <ul>
+            <li>
+              Functionality: Offers a comprehensive set of features for user
+              behavior analysis.
+            </li>
+            <li>
+              User Interface: Boasts an intuitive and user-friendly interface.
+            </li>
+            <li>
+              Cost: Competitive pricing with various plans for different
+              business needs.
+            </li>
+            <li>
+              Scalability: Designed to handle large volumes of data and scale
+              accordingly.
+            </li>
+            <li>
+              Customer Support: Responsive support through multiple channels.
+            </li>
+          </ul>
+        </div>
+        <button onclick="toggleContent('content5')">Show / Hide</button>
+        <h2>Conclusion:</h2>
+
+        <div id="content6" class="hidden">
+          <p>
+            The Smartlook Information System provides powerful functionalities
+            for user behavior analysis, optimization, and bug tracking. It
+            offers valuable insights to businesses, helping them make
+            data-driven decisions for improved user experience. With its strong
+            functionality, user-friendly interface, competitive pricing,
+            scalability, and reliable customer support, Smartlook positions
+            itself as a leading solution in the market for user behavior
+            analytics.
+          </p>
+        </div>
+        <button onclick="toggleContent('content6')">Show / Hide</button>
       </div>
     </div>
 
     <div class="footer">
-      <p>&copy; 2023 SmartLook Information System. All rights reserved.</p>
+      <p>Valeriya Saltykova & Valeriia Nikitina</p>
     </div>
+
+    <script>
+      function toggleContent(contentId) {
+        const content = document.getElementById(contentId);
+        content.classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
